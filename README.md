@@ -1,36 +1,38 @@
-# CLI GitHub Stars Fetcher
+# GitHub Repository Search
 
-This project is a command-line interface (CLI) tool that allows you to fetch the number of stars for a GitHub repository. It provides a simple and convenient way to retrieve this information without having to navigate to the repository's page.
+This project contains a script (`index.js`) that searches for GitHub repositories based on specified criteria and sorts them by the number of stars.
 
-## Features
+## Description
 
-- Fetch the number of stars for a GitHub repository
-- Easy-to-use command-line interface
-- Fast and efficient retrieval of star count
+The `index.js` file uses the GitHub API to search for repositories created within a specified date range and sorts them by the number of stars in descending order. The results are then logged to the console.
 
 ## Installation
 
-To install the CLI GitHub Stars Fetcher, follow these steps:
-
-1. Clone the repository to your local machine.
-2. Navigate to the project directory.
-3. Run the installation command: `npm install`.
-4. Once the installation is complete, you can start using the CLI tool.
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/yourusername/repo-name.git
+   ```
+2. Navigate to the project directory:
+   ```sh
+   cd repo-name
+   ```
+3. Install the dependencies:
+   ```sh
+   npm install axios commander
+   ```
 
 ## Usage
 
-To use the CLI GitHub Stars Fetcher, follow these steps:
-
-1. Open your terminal or command prompt.
-2. Navigate to the project directory.
-3. Run the command: `node index.js <repository>`.
-4. Replace `<repository>` with the GitHub repository you want to fetch the stars for.
-5. The CLI tool will display the number of stars for the specified repository.
+1. Run the script with the desired date range:
+   ```sh
+   node index.js -s <start-date> -e <end-date>
+   ```
+   Replace `<start-date>` and `<end-date>` with the desired dates in [`YYYY-MM-DD`] format.
 
 ## Example
 
-Here's an example of how to use the CLI GitHub Stars Fetcher:
+Example command:
 
-```
-$ node index.js -s "2023-01-01" -e "2024-01-01"
+```sh
+node index.js -s 2022-01-01 -e 2022-12-31
 ```
