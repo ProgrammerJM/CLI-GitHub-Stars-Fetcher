@@ -32,7 +32,5 @@ To use the CLI GitHub Stars Fetcher, follow these steps:
 Here's an example of how to use the CLI GitHub Stars Fetcher:
 
 ```
-$ node index.js username/repo
-Fetching stars for username/repo...
-The repository username/repo has 100 stars.
+$ node index.js -s "2023-01-01" -e "2024-01-01"
 ```
