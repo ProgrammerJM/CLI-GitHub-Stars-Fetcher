@@ -1,4 +1,4 @@
-# GitHub Repository Search
+# Most Starred GitHub Projects within Date Range
 
 This project contains a script (`index.js`) that searches for GitHub repositories based on specified criteria and sorts them by the number of stars.
 
